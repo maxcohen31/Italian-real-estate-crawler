@@ -17,7 +17,7 @@ class ImmoScraper(scrapy.Spider):
         'AUTOTHROTTLE_ENABLED': True
     }
     
-    
+    # spider's entry point
     def start_requests(self):
         
         with open('links.txt') as f:
