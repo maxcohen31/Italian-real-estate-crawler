@@ -1,2 +1,2 @@
 # Italian-real-estate-crawler
-Web crawler by using Scrapy framework
+Real estate crawler made by using Scrapy framework
