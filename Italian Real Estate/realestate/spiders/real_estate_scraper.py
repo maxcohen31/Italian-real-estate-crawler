@@ -17,7 +17,7 @@ class ImmoScraper(scrapy.Spider):
         'AUTOTHROTTLE_ENABLED': True
     }
     
-    
+    # spider's entry point
     def start_requests(self):
         
         with open('links.txt') as f:
@@ -57,7 +57,7 @@ class ImmoScraper(scrapy.Spider):
             link for link in response.xpath("//a[@class='in-card__title']/@href").getall()
             ]
         
-        # loop over the links every card embedds
+        # loop over the links every card embeds
         for card_url in cards:
             yield response.follow(
                 url=card_url,
