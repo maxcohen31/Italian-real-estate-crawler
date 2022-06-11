@@ -50,7 +50,6 @@ class ImmoScraper(scrapy.Spider):
                 callback=self.parse_links
             )
             
-        
     def parse_links(self, response):
         
         # list of links
